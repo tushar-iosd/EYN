@@ -1,0 +1,675 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		841F22A723587E9300BAD00D /* Appecules.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 841F22A523587E9300BAD00D /* Appecules.xcdatamodeld */; };
+		843DB0F7231FDB69006F1E3D /* CoreData in Resources */ = {isa = PBXBuildFile; fileRef = 843DB0F6231FDB69006F1E3D /* CoreData */; };
+		843DB100231FEA7F006F1E3D /* UserDataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843DB0FE231FEA7F006F1E3D /* UserDataCell.swift */; };
+		843DB101231FEA7F006F1E3D /* UserDataCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 843DB0FF231FEA7F006F1E3D /* UserDataCell.xib */; };
+		848DCEC92316A6EA00B94EE4 /* NavigationBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 848DCEC82316A6EA00B94EE4 /* NavigationBar.xib */; };
+		84B73B7D2319831500EE81EF /* EasyTipViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B73B7C2319831500EE81EF /* EasyTipViewHelper.swift */; };
+		84C277C0231561C5002BBA02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C277BF231561C5002BBA02 /* AppDelegate.swift */; };
+		84C277C2231561C5002BBA02 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C277C1231561C5002BBA02 /* Home.swift */; };
+		84C277C5231561C5002BBA02 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84C277C3231561C5002BBA02 /* Main.storyboard */; };
+		84C277C7231561CD002BBA02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84C277C6231561CD002BBA02 /* Assets.xcassets */; };
+		84C277CA231561CE002BBA02 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84C277C8231561CE002BBA02 /* LaunchScreen.storyboard */; };
+		84C277D323156216002BBA02 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C277D223156216002BBA02 /* UIViewController.swift */; };
+		84C277D62315626E002BBA02 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C277D52315626E002BBA02 /* UIApplication.swift */; };
+		84C277D82315645A002BBA02 /* UIAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C277D72315645A002BBA02 /* UIAlertViewController.swift */; };
+		84C277DB23156674002BBA02 /* Closure in Resources */ = {isa = PBXBuildFile; fileRef = 84C277DA23156674002BBA02 /* Closure */; };
+		84C277DD23156C20002BBA02 /* UserDataVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C277DC23156C20002BBA02 /* UserDataVC.swift */; };
+		84C277E323158E2F002BBA02 /* AppeculesStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C277E223158E2F002BBA02 /* AppeculesStyle.swift */; };
+		84C277E523159311002BBA02 /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C277E423159311002BBA02 /* NavigationBar.swift */; };
+		84C277E723159972002BBA02 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C277E623159972002BBA02 /* Constant.swift */; };
+		F0393E1BD5032D56015EA6AB /* Pods_Appecules.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E98654DFA9A89B50ABBEB6DD /* Pods_Appecules.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		588EBBEAC3B69DC2CEC65FB9 /* Pods-Appecules.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Appecules.release.xcconfig"; path = "Target Support Files/Pods-Appecules/Pods-Appecules.release.xcconfig"; sourceTree = "<group>"; };
+		841F22A623587E9300BAD00D /* Appecules.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Appecules.xcdatamodel; sourceTree = "<group>"; };
+		843DB0F6231FDB69006F1E3D /* CoreData */ = {isa = PBXFileReference; lastKnownFileType = text; path = CoreData; sourceTree = "<group>"; };
+		843DB0FE231FEA7F006F1E3D /* UserDataCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataCell.swift; sourceTree = "<group>"; };
+		843DB0FF231FEA7F006F1E3D /* UserDataCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserDataCell.xib; sourceTree = "<group>"; };
+		8487C3F2233CC8280067E515 /* libWorldpay.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWorldpay.a; sourceTree = "<group>"; };
+		8487C3F4233CC8280067E515 /* ThreeDSController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThreeDSController.h; sourceTree = "<group>"; };
+		8487C3F5233CC8280067E515 /* WorldpayCardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WorldpayCardViewController.h; sourceTree = "<group>"; };
+		8487C3F6233CC8280067E515 /* WorldpayResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = WorldpayResources.bundle; sourceTree = "<group>"; };
+		8487C3F7233CC8280067E515 /* WorldpayAPMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WorldpayAPMViewController.h; sourceTree = "<group>"; };
+		8487C3F8233CC8280067E515 /* Worldpay.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Worldpay.h; sourceTree = "<group>"; };
+		8487C3F9233CC8280067E515 /* APMController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APMController.h; sourceTree = "<group>"; };
+		8487C3FA233CC8280067E515 /* Worldpay+ApplePay.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Worldpay+ApplePay.h"; sourceTree = "<group>"; };
+		8487C3FB233CC9DC0067E515 /* Appecules-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Appecules-Bridging-Header.h"; sourceTree = "<group>"; };
+		8487C401233CCD620067E515 /* libWorldpay.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWorldpay.a; sourceTree = "<group>"; };
+		8487C403233CCD620067E515 /* ThreeDSController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThreeDSController.h; sourceTree = "<group>"; };
+		8487C404233CCD620067E515 /* WorldpayCardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WorldpayCardViewController.h; sourceTree = "<group>"; };
+		8487C405233CCD620067E515 /* WorldpayResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = WorldpayResources.bundle; sourceTree = "<group>"; };
+		8487C406233CCD620067E515 /* WorldpayAPMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WorldpayAPMViewController.h; sourceTree = "<group>"; };
+		8487C407233CCD620067E515 /* Worldpay.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Worldpay.h; sourceTree = "<group>"; };
+		8487C408233CCD620067E515 /* APMController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APMController.h; sourceTree = "<group>"; };
+		8487C409233CCD620067E515 /* Worldpay+ApplePay.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Worldpay+ApplePay.h"; sourceTree = "<group>"; };
+		8487C40B233CCD9C0067E515 /* libWorldpay.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWorldpay.a; sourceTree = "<group>"; };
+		8487C40D233CCD9C0067E515 /* ThreeDSController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThreeDSController.h; sourceTree = "<group>"; };
+		8487C40E233CCD9C0067E515 /* WorldpayCardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WorldpayCardViewController.h; sourceTree = "<group>"; };
+		8487C40F233CCD9C0067E515 /* WorldpayResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = WorldpayResources.bundle; sourceTree = "<group>"; };
+		8487C410233CCD9C0067E515 /* WorldpayAPMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WorldpayAPMViewController.h; sourceTree = "<group>"; };
+		8487C411233CCD9C0067E515 /* Worldpay.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Worldpay.h; sourceTree = "<group>"; };
+		8487C412233CCD9C0067E515 /* APMController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APMController.h; sourceTree = "<group>"; };
+		8487C413233CCD9C0067E515 /* Worldpay+ApplePay.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Worldpay+ApplePay.h"; sourceTree = "<group>"; };
+		8487C415233CCDAF0067E515 /* libWorldpay.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWorldpay.a; sourceTree = "<group>"; };
+		8487C417233CCDAF0067E515 /* ThreeDSController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThreeDSController.h; sourceTree = "<group>"; };
+		8487C418233CCDAF0067E515 /* WorldpayCardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WorldpayCardViewController.h; sourceTree = "<group>"; };
+		8487C419233CCDAF0067E515 /* WorldpayResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = WorldpayResources.bundle; sourceTree = "<group>"; };
+		8487C41A233CCDAF0067E515 /* WorldpayAPMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WorldpayAPMViewController.h; sourceTree = "<group>"; };
+		8487C41B233CCDAF0067E515 /* Worldpay.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Worldpay.h; sourceTree = "<group>"; };
+		8487C41C233CCDAF0067E515 /* APMController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APMController.h; sourceTree = "<group>"; };
+		8487C41D233CCDAF0067E515 /* Worldpay+ApplePay.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Worldpay+ApplePay.h"; sourceTree = "<group>"; };
+		848DCEC82316A6EA00B94EE4 /* NavigationBar.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NavigationBar.xib; sourceTree = "<group>"; };
+		84B73B7C2319831500EE81EF /* EasyTipViewHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyTipViewHelper.swift; sourceTree = "<group>"; };
+		84C277BC231561C5002BBA02 /* Appecules.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Appecules.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84C277BF231561C5002BBA02 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		84C277C1231561C5002BBA02 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		84C277C4231561C5002BBA02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		84C277C6231561CD002BBA02 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		84C277C9231561CE002BBA02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		84C277CB231561CE002BBA02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84C277D223156216002BBA02 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		84C277D52315626E002BBA02 /* UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
+		84C277D72315645A002BBA02 /* UIAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAlertViewController.swift; sourceTree = "<group>"; };
+		84C277DA23156674002BBA02 /* Closure */ = {isa = PBXFileReference; lastKnownFileType = text; path = Closure; sourceTree = "<group>"; usesTabs = 0; };
+		84C277DC23156C20002BBA02 /* UserDataVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataVC.swift; sourceTree = "<group>"; };
+		84C277E223158E2F002BBA02 /* AppeculesStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppeculesStyle.swift; sourceTree = "<group>"; };
+		84C277E423159311002BBA02 /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
+		84C277E623159972002BBA02 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		D2D5E93F5C7FD9874C0E782F /* Pods-Appecules.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Appecules.debug.xcconfig"; path = "Target Support Files/Pods-Appecules/Pods-Appecules.debug.xcconfig"; sourceTree = "<group>"; };
+		E98654DFA9A89B50ABBEB6DD /* Pods_Appecules.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Appecules.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84C277B9231561C5002BBA02 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0393E1BD5032D56015EA6AB /* Pods_Appecules.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		12601DE9982EDCBAF7FFF50E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8487C3F1233CC8270067E515 /* Worldpay */,
+				8487C400233CCD620067E515 /* Worldpay */,
+				8487C40A233CCD9C0067E515 /* Worldpay */,
+				8487C414233CCDAF0067E515 /* Worldpay */,
+				E98654DFA9A89B50ABBEB6DD /* Pods_Appecules.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		843DB0F8231FE9EE006F1E3D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				843DB0F9231FE9FE006F1E3D /* TableViewCell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		843DB0F9231FE9FE006F1E3D /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				84E7907F2359FDCA00CACDFC /* UserData */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		8487C3F1233CC8270067E515 /* Worldpay */ = {
+			isa = PBXGroup;
+			children = (
+				8487C3F2233CC8280067E515 /* libWorldpay.a */,
+				8487C3F3233CC8280067E515 /* include */,
+			);
+			path = Worldpay;
+			sourceTree = "<group>";
+		};
+		8487C3F3233CC8280067E515 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				8487C3F4233CC8280067E515 /* ThreeDSController.h */,
+				8487C3F5233CC8280067E515 /* WorldpayCardViewController.h */,
+				8487C3F6233CC8280067E515 /* WorldpayResources.bundle */,
+				8487C3F7233CC8280067E515 /* WorldpayAPMViewController.h */,
+				8487C3F8233CC8280067E515 /* Worldpay.h */,
+				8487C3F9233CC8280067E515 /* APMController.h */,
+				8487C3FA233CC8280067E515 /* Worldpay+ApplePay.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		8487C400233CCD620067E515 /* Worldpay */ = {
+			isa = PBXGroup;
+			children = (
+				8487C401233CCD620067E515 /* libWorldpay.a */,
+				8487C402233CCD620067E515 /* include */,
+			);
+			name = Worldpay;
+			path = Appecules/Worldpay;
+			sourceTree = "<group>";
+		};
+		8487C402233CCD620067E515 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				8487C403233CCD620067E515 /* ThreeDSController.h */,
+				8487C404233CCD620067E515 /* WorldpayCardViewController.h */,
+				8487C405233CCD620067E515 /* WorldpayResources.bundle */,
+				8487C406233CCD620067E515 /* WorldpayAPMViewController.h */,
+				8487C407233CCD620067E515 /* Worldpay.h */,
+				8487C408233CCD620067E515 /* APMController.h */,
+				8487C409233CCD620067E515 /* Worldpay+ApplePay.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		8487C40A233CCD9C0067E515 /* Worldpay */ = {
+			isa = PBXGroup;
+			children = (
+				8487C40B233CCD9C0067E515 /* libWorldpay.a */,
+				8487C40C233CCD9C0067E515 /* include */,
+			);
+			name = Worldpay;
+			path = Appecules/Worldpay;
+			sourceTree = "<group>";
+		};
+		8487C40C233CCD9C0067E515 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				8487C40D233CCD9C0067E515 /* ThreeDSController.h */,
+				8487C40E233CCD9C0067E515 /* WorldpayCardViewController.h */,
+				8487C40F233CCD9C0067E515 /* WorldpayResources.bundle */,
+				8487C410233CCD9C0067E515 /* WorldpayAPMViewController.h */,
+				8487C411233CCD9C0067E515 /* Worldpay.h */,
+				8487C412233CCD9C0067E515 /* APMController.h */,
+				8487C413233CCD9C0067E515 /* Worldpay+ApplePay.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		8487C414233CCDAF0067E515 /* Worldpay */ = {
+			isa = PBXGroup;
+			children = (
+				8487C415233CCDAF0067E515 /* libWorldpay.a */,
+				8487C416233CCDAF0067E515 /* include */,
+			);
+			name = Worldpay;
+			path = Appecules/Worldpay;
+			sourceTree = "<group>";
+		};
+		8487C416233CCDAF0067E515 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				8487C417233CCDAF0067E515 /* ThreeDSController.h */,
+				8487C418233CCDAF0067E515 /* WorldpayCardViewController.h */,
+				8487C419233CCDAF0067E515 /* WorldpayResources.bundle */,
+				8487C41A233CCDAF0067E515 /* WorldpayAPMViewController.h */,
+				8487C41B233CCDAF0067E515 /* Worldpay.h */,
+				8487C41C233CCDAF0067E515 /* APMController.h */,
+				8487C41D233CCDAF0067E515 /* Worldpay+ApplePay.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		84C277B3231561C4002BBA02 = {
+			isa = PBXGroup;
+			children = (
+				84C277BE231561C5002BBA02 /* Appecules */,
+				84C277BD231561C5002BBA02 /* Products */,
+				DCEE4D684702DF3169711769 /* Pods */,
+				12601DE9982EDCBAF7FFF50E /* Frameworks */,
+				8487C3FB233CC9DC0067E515 /* Appecules-Bridging-Header.h */,
+			);
+			sourceTree = "<group>";
+		};
+		84C277BD231561C5002BBA02 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84C277BC231561C5002BBA02 /* Appecules.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84C277BE231561C5002BBA02 /* Appecules */ = {
+			isa = PBXGroup;
+			children = (
+				843DB0F8231FE9EE006F1E3D /* View */,
+				84C277D923156659002BBA02 /* Notes */,
+				84C277D1231561E5002BBA02 /* Utility */,
+				84C277BF231561C5002BBA02 /* AppDelegate.swift */,
+				84C277C1231561C5002BBA02 /* Home.swift */,
+				84C277DC23156C20002BBA02 /* UserDataVC.swift */,
+				84C277C3231561C5002BBA02 /* Main.storyboard */,
+				84C277C6231561CD002BBA02 /* Assets.xcassets */,
+				84C277C8231561CE002BBA02 /* LaunchScreen.storyboard */,
+				84C277CB231561CE002BBA02 /* Info.plist */,
+				84C277E223158E2F002BBA02 /* AppeculesStyle.swift */,
+				841F22A523587E9300BAD00D /* Appecules.xcdatamodeld */,
+			);
+			path = Appecules;
+			sourceTree = "<group>";
+		};
+		84C277D1231561E5002BBA02 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				84C277D42315621E002BBA02 /* Extensions */,
+				84C277E423159311002BBA02 /* NavigationBar.swift */,
+				84C277E623159972002BBA02 /* Constant.swift */,
+				848DCEC82316A6EA00B94EE4 /* NavigationBar.xib */,
+				84B73B7C2319831500EE81EF /* EasyTipViewHelper.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		84C277D42315621E002BBA02 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				84C277D223156216002BBA02 /* UIViewController.swift */,
+				84C277D52315626E002BBA02 /* UIApplication.swift */,
+				84C277D72315645A002BBA02 /* UIAlertViewController.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		84C277D923156659002BBA02 /* Notes */ = {
+			isa = PBXGroup;
+			children = (
+				84C277DA23156674002BBA02 /* Closure */,
+				843DB0F6231FDB69006F1E3D /* CoreData */,
+			);
+			path = Notes;
+			sourceTree = "<group>";
+		};
+		84E7907F2359FDCA00CACDFC /* UserData */ = {
+			isa = PBXGroup;
+			children = (
+				843DB0FE231FEA7F006F1E3D /* UserDataCell.swift */,
+				843DB0FF231FEA7F006F1E3D /* UserDataCell.xib */,
+			);
+			path = UserData;
+			sourceTree = "<group>";
+		};
+		DCEE4D684702DF3169711769 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D2D5E93F5C7FD9874C0E782F /* Pods-Appecules.debug.xcconfig */,
+				588EBBEAC3B69DC2CEC65FB9 /* Pods-Appecules.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84C277BB231561C5002BBA02 /* Appecules */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84C277CE231561CE002BBA02 /* Build configuration list for PBXNativeTarget "Appecules" */;
+			buildPhases = (
+				F62E15BCFE53D80C31FF5540 /* [CP] Check Pods Manifest.lock */,
+				84C277B8231561C5002BBA02 /* Sources */,
+				84C277B9231561C5002BBA02 /* Frameworks */,
+				84C277BA231561C5002BBA02 /* Resources */,
+				55A4BE0CC256F1158453D0A0 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Appecules;
+			productName = Appecules;
+			productReference = 84C277BC231561C5002BBA02 /* Appecules.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84C277B4231561C4002BBA02 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = admin;
+				TargetAttributes = {
+					84C277BB231561C5002BBA02 = {
+						CreatedOnToolsVersion = 10.2;
+						LastSwiftMigration = 1020;
+					};
+				};
+			};
+			buildConfigurationList = 84C277B7231561C4002BBA02 /* Build configuration list for PBXProject "Appecules" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 84C277B3231561C4002BBA02;
+			productRefGroup = 84C277BD231561C5002BBA02 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84C277BB231561C5002BBA02 /* Appecules */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84C277BA231561C5002BBA02 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84C277DB23156674002BBA02 /* Closure in Resources */,
+				843DB101231FEA7F006F1E3D /* UserDataCell.xib in Resources */,
+				843DB0F7231FDB69006F1E3D /* CoreData in Resources */,
+				84C277CA231561CE002BBA02 /* LaunchScreen.storyboard in Resources */,
+				84C277C7231561CD002BBA02 /* Assets.xcassets in Resources */,
+				84C277C5231561C5002BBA02 /* Main.storyboard in Resources */,
+				848DCEC92316A6EA00B94EE4 /* NavigationBar.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		55A4BE0CC256F1158453D0A0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Appecules/Pods-Appecules-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Appecules/Pods-Appecules-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Appecules/Pods-Appecules-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F62E15BCFE53D80C31FF5540 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Appecules-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84C277B8231561C5002BBA02 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84B73B7D2319831500EE81EF /* EasyTipViewHelper.swift in Sources */,
+				84C277DD23156C20002BBA02 /* UserDataVC.swift in Sources */,
+				843DB100231FEA7F006F1E3D /* UserDataCell.swift in Sources */,
+				84C277D82315645A002BBA02 /* UIAlertViewController.swift in Sources */,
+				84C277E723159972002BBA02 /* Constant.swift in Sources */,
+				84C277D62315626E002BBA02 /* UIApplication.swift in Sources */,
+				84C277E523159311002BBA02 /* NavigationBar.swift in Sources */,
+				84C277C2231561C5002BBA02 /* Home.swift in Sources */,
+				841F22A723587E9300BAD00D /* Appecules.xcdatamodeld in Sources */,
+				84C277C0231561C5002BBA02 /* AppDelegate.swift in Sources */,
+				84C277E323158E2F002BBA02 /* AppeculesStyle.swift in Sources */,
+				84C277D323156216002BBA02 /* UIViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		84C277C3231561C5002BBA02 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84C277C4231561C5002BBA02 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		84C277C8231561CE002BBA02 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84C277C9231561CE002BBA02 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		84C277CC231561CE002BBA02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		84C277CD231561CE002BBA02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84C277CF231561CE002BBA02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2D5E93F5C7FD9874C0E782F /* Pods-Appecules.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HT4YSVR6KT;
+				INFOPLIST_FILE = Appecules/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Appecules/Worldpay",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Appecules.Appecules;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Appecules-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		84C277D0231561CE002BBA02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 588EBBEAC3B69DC2CEC65FB9 /* Pods-Appecules.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HT4YSVR6KT;
+				INFOPLIST_FILE = Appecules/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Appecules/Worldpay",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Appecules.Appecules;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Appecules-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84C277B7231561C4002BBA02 /* Build configuration list for PBXProject "Appecules" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84C277CC231561CE002BBA02 /* Debug */,
+				84C277CD231561CE002BBA02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84C277CE231561CE002BBA02 /* Build configuration list for PBXNativeTarget "Appecules" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84C277CF231561CE002BBA02 /* Debug */,
+				84C277D0231561CE002BBA02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		841F22A523587E9300BAD00D /* Appecules.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				841F22A623587E9300BAD00D /* Appecules.xcdatamodel */,
+			);
+			currentVersion = 841F22A623587E9300BAD00D /* Appecules.xcdatamodel */;
+			path = Appecules.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 84C277B4231561C4002BBA02 /* Project object */;
+}

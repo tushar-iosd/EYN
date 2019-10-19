@@ -1,0 +1,10 @@
+"Closures"
+
+Closures are self-contained blocks of functionality that can be passed around and used in your code.
+
+-> Closures can capture and store references to any constants and variables from the context in which they are defined, known as closing over hence Closure.
+
+() Doesn’t have a name of its own.
+() Can captures any values from its environment.
+
+-> Functions and closures are first-class objects in Swift: you can store them, pass them as arguments to functions, and treat them as you would any other value or object
