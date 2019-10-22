@@ -19,20 +19,20 @@ class Home: UIViewController {
     
     var tipView : EasyTipView?
     @IBOutlet weak var nextScreenButton: UIButton!
-      @IBOutlet weak var showAlertBtn: UIButton!
+    @IBOutlet weak var showAlertBtn: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-       // showOutgoingMessage(width: 280, height: 50)
+        // showOutgoingMessage(width: 280, height: 50)
         self.customNavigationView(barType:appeculesScreen.Home)
         easyTipHelper.setPreferences()
-         // Do any additional setup after loading the view.
+        // Do any additional setup after loading the view.
     }
     
- 
-
+    
+    
     @IBAction func showAnAlert(_ sender: Any) {
         // Single Alert Action
-      //   self.presentAlertController(title: "Appecules", message: "A Sample Message", buttons: ["Okay"])
+        //   self.presentAlertController(title: "Appecules", message: "A Sample Message", buttons: ["Okay"])
         
         //Multiple Action Alert
         UIAlertController.showAlert(ApplicationHeaders.appName, message: ApplicationHeaders.appName, buttons: [AppAlertMessage.okay, AppAlertMessage.cancel,AppAlertMessage.no]) { (alert, index) in
@@ -45,9 +45,9 @@ class Home: UIViewController {
         }
     }
     
-
+    
     @IBAction func navigateToNextScreen(_ sender: Any) {
-       // Navigating to UserData Screen
+        // Navigating to UserData Screen
         navigate(newControl: viewControllers.UserData, StoryBoard: storyBoardID.Main.rawValue)
     }
     
@@ -81,7 +81,7 @@ extension Home {
     
     /*
      Closure Example
-    1. Closures are self-contained blocks of functionality that can be passed around and used in your code.
+     1. Closures are self-contained blocks of functionality that can be passed around and used in your code.
      -> Closures can capture and store references to any constants and variables from the context in which they are defined, known as closing over hence Closure.
      
      () Doesn’t have a name of its own.

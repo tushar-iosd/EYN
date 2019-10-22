@@ -7,10 +7,11 @@
 //
 
 import UIKit
-
 enum appeculesScreen: String {
     case Home = "Home"
     case OrderHistory = "Order History"
+    case AddUser = "Add User"
+    case UserDetail = "User Detail"
 }
 
 
@@ -32,12 +33,22 @@ class NavigationBar: UIView {
             leftButtonItem.isHidden = true
             rightButtonItem.isHidden = true
             color = UIColor.red
-            case .OrderHistory:
-                 leftButtonItem.setTitle("Back", for: .normal)
-                 leftButtonItem.titleLabel?.textColor = UIColor.white
-                rightButtonItem.setTitle("+", for: .normal)
-                rightButtonItem.titleLabel?.textColor = UIColor.white
+        case .OrderHistory:
+            leftButtonItem.setTitle("Back", for: .normal)
+            leftButtonItem.titleLabel?.textColor = UIColor.white
+            rightButtonItem.setTitle("+", for: .normal)
+            rightButtonItem.titleLabel?.textColor = UIColor.white
             color = UIColor.green
+        case .AddUser:
+            leftButtonItem.setTitle("Back", for: .normal)
+            leftButtonItem.titleLabel?.textColor = UIColor.white
+            rightButtonItem.isHidden = true
+            color = UIColor.purple
+        case .UserDetail:
+            leftButtonItem.setTitle("Back", for: .normal)
+            leftButtonItem.titleLabel?.textColor = UIColor.white
+            rightButtonItem.isHidden = true
+            color = UIColor.purple
         }
         self.backgroundColor = color
     }
@@ -51,7 +62,7 @@ class NavigationBar: UIView {
     @IBAction func leftButtonAction(_ sender: Any) {
         switch barType {
         case .Home:
-             print("Homed")
+            print("Homed")
         default:
             UIApplication.visibleViewController.navigationController?.popViewController(animated: true)
         }
@@ -67,4 +78,5 @@ class NavigationBar: UIView {
             UIApplication.visibleViewController.navigationController?.popViewController(animated: true)
         }
     }
+    
 }

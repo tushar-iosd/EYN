@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import CoreData
 extension UIViewController {
     
  
@@ -106,6 +107,38 @@ extension UIViewController {
             print("PresentVC",VC)
         }
         return VC.rawValue
+    }
+    
+    func registerTableCell(tableView: UITableView, tableViewCell: String) {
+        let userDataCell = UINib(nibName: tableViewCell, bundle: nil)
+        tableView.tableFooterView = UIView()
+        tableView.register(userDataCell, forCellReuseIdentifier: tableViewCell)
+    }
+    
+    func saveWithCoreData(entityName: String, Entries: [String: String]){
+        print(Entries.keys.count)
+        guard let appDelegate =
+            UIApplication.shared.delegate as? AppDelegate else {
+                return
+        }
+        // 1
+        let managedContext =
+            appDelegate.persistentContainer.viewContext
+        // 2
+        let entity =
+            NSEntityDescription.entity(forEntityName: entityName,
+                                       in: managedContext)!
+        let person = NSManagedObject(entity: entity,
+                                     insertInto: managedContext)
+        
+        for (key, value) in Entries { 
+             person.setValue(value, forKeyPath: key)
+        }
+        do {
+            try managedContext.save()
+        } catch let error as NSError {
+            print("Could not save. \(error), \(error.userInfo)")
+        }
     }
     
     /*

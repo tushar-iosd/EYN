@@ -12,6 +12,7 @@
 		843DB100231FEA7F006F1E3D /* UserDataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843DB0FE231FEA7F006F1E3D /* UserDataCell.swift */; };
 		843DB101231FEA7F006F1E3D /* UserDataCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 843DB0FF231FEA7F006F1E3D /* UserDataCell.xib */; };
 		848DCEC92316A6EA00B94EE4 /* NavigationBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 848DCEC82316A6EA00B94EE4 /* NavigationBar.xib */; };
+		84B22BCF235F38E10001817B /* UserDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B22BCE235F38E10001817B /* UserDetailVC.swift */; };
 		84B73B7D2319831500EE81EF /* EasyTipViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B73B7C2319831500EE81EF /* EasyTipViewHelper.swift */; };
 		84C277C0231561C5002BBA02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C277BF231561C5002BBA02 /* AppDelegate.swift */; };
 		84C277C2231561C5002BBA02 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C277C1231561C5002BBA02 /* Home.swift */; };
@@ -26,6 +27,10 @@
 		84C277E323158E2F002BBA02 /* AppeculesStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C277E223158E2F002BBA02 /* AppeculesStyle.swift */; };
 		84C277E523159311002BBA02 /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C277E423159311002BBA02 /* NavigationBar.swift */; };
 		84C277E723159972002BBA02 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C277E623159972002BBA02 /* Constant.swift */; };
+		84C8D3B9235B476600CC701A /* Desc in Resources */ = {isa = PBXBuildFile; fileRef = 84C8D3B8235B476600CC701A /* Desc */; };
+		84EB1BD5235E2438006EF45B /* AddUserVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EB1BD4235E2438006EF45B /* AddUserVC.swift */; };
+		84EB1BDE235E2A7D006EF45B /* AddUserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EB1BDC235E2A7D006EF45B /* AddUserCell.swift */; };
+		84EB1BDF235E2A7D006EF45B /* AddUserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84EB1BDD235E2A7D006EF45B /* AddUserCell.xib */; };
 		F0393E1BD5032D56015EA6AB /* Pods_Appecules.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E98654DFA9A89B50ABBEB6DD /* Pods_Appecules.framework */; };
 /* End PBXBuildFile section */
 
@@ -69,6 +74,7 @@
 		8487C41C233CCDAF0067E515 /* APMController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APMController.h; sourceTree = "<group>"; };
 		8487C41D233CCDAF0067E515 /* Worldpay+ApplePay.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Worldpay+ApplePay.h"; sourceTree = "<group>"; };
 		848DCEC82316A6EA00B94EE4 /* NavigationBar.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NavigationBar.xib; sourceTree = "<group>"; };
+		84B22BCE235F38E10001817B /* UserDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailVC.swift; sourceTree = "<group>"; };
 		84B73B7C2319831500EE81EF /* EasyTipViewHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyTipViewHelper.swift; sourceTree = "<group>"; };
 		84C277BC231561C5002BBA02 /* Appecules.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Appecules.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84C277BF231561C5002BBA02 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -85,6 +91,10 @@
 		84C277E223158E2F002BBA02 /* AppeculesStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppeculesStyle.swift; sourceTree = "<group>"; };
 		84C277E423159311002BBA02 /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
 		84C277E623159972002BBA02 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		84C8D3B8235B476600CC701A /* Desc */ = {isa = PBXFileReference; lastKnownFileType = text; path = Desc; sourceTree = "<group>"; };
+		84EB1BD4235E2438006EF45B /* AddUserVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddUserVC.swift; sourceTree = "<group>"; };
+		84EB1BDC235E2A7D006EF45B /* AddUserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddUserCell.swift; sourceTree = "<group>"; };
+		84EB1BDD235E2A7D006EF45B /* AddUserCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddUserCell.xib; sourceTree = "<group>"; };
 		D2D5E93F5C7FD9874C0E782F /* Pods-Appecules.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Appecules.debug.xcconfig"; path = "Target Support Files/Pods-Appecules/Pods-Appecules.debug.xcconfig"; sourceTree = "<group>"; };
 		E98654DFA9A89B50ABBEB6DD /* Pods_Appecules.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Appecules.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -116,6 +126,7 @@
 		843DB0F8231FE9EE006F1E3D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				84EB1BD6235E2547006EF45B /* Custom Views */,
 				843DB0F9231FE9FE006F1E3D /* TableViewCell */,
 			);
 			path = View;
@@ -124,6 +135,7 @@
 		843DB0F9231FE9FE006F1E3D /* TableViewCell */ = {
 			isa = PBXGroup;
 			children = (
+				84EB1BDB235E2A57006EF45B /* AddUser */,
 				84E7907F2359FDCA00CACDFC /* UserData */,
 			);
 			path = TableViewCell;
@@ -231,6 +243,7 @@
 				84C277BD231561C5002BBA02 /* Products */,
 				DCEE4D684702DF3169711769 /* Pods */,
 				12601DE9982EDCBAF7FFF50E /* Frameworks */,
+				84C8D3B8235B476600CC701A /* Desc */,
 				8487C3FB233CC9DC0067E515 /* Appecules-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
@@ -252,6 +265,8 @@
 				84C277BF231561C5002BBA02 /* AppDelegate.swift */,
 				84C277C1231561C5002BBA02 /* Home.swift */,
 				84C277DC23156C20002BBA02 /* UserDataVC.swift */,
+				84EB1BD4235E2438006EF45B /* AddUserVC.swift */,
+				84B22BCE235F38E10001817B /* UserDetailVC.swift */,
 				84C277C3231561C5002BBA02 /* Main.storyboard */,
 				84C277C6231561CD002BBA02 /* Assets.xcassets */,
 				84C277C8231561CE002BBA02 /* LaunchScreen.storyboard */,
@@ -266,9 +281,7 @@
 			isa = PBXGroup;
 			children = (
 				84C277D42315621E002BBA02 /* Extensions */,
-				84C277E423159311002BBA02 /* NavigationBar.swift */,
 				84C277E623159972002BBA02 /* Constant.swift */,
-				848DCEC82316A6EA00B94EE4 /* NavigationBar.xib */,
 				84B73B7C2319831500EE81EF /* EasyTipViewHelper.swift */,
 			);
 			path = Utility;
@@ -300,6 +313,24 @@
 				843DB0FF231FEA7F006F1E3D /* UserDataCell.xib */,
 			);
 			path = UserData;
+			sourceTree = "<group>";
+		};
+		84EB1BD6235E2547006EF45B /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				84C277E423159311002BBA02 /* NavigationBar.swift */,
+				848DCEC82316A6EA00B94EE4 /* NavigationBar.xib */,
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		84EB1BDB235E2A57006EF45B /* AddUser */ = {
+			isa = PBXGroup;
+			children = (
+				84EB1BDC235E2A7D006EF45B /* AddUserCell.swift */,
+				84EB1BDD235E2A7D006EF45B /* AddUserCell.xib */,
+			);
+			path = AddUser;
 			sourceTree = "<group>";
 		};
 		DCEE4D684702DF3169711769 /* Pods */ = {
@@ -375,6 +406,8 @@
 				84C277DB23156674002BBA02 /* Closure in Resources */,
 				843DB101231FEA7F006F1E3D /* UserDataCell.xib in Resources */,
 				843DB0F7231FDB69006F1E3D /* CoreData in Resources */,
+				84C8D3B9235B476600CC701A /* Desc in Resources */,
+				84EB1BDF235E2A7D006EF45B /* AddUserCell.xib in Resources */,
 				84C277CA231561CE002BBA02 /* LaunchScreen.storyboard in Resources */,
 				84C277C7231561CD002BBA02 /* Assets.xcassets in Resources */,
 				84C277C5231561C5002BBA02 /* Main.storyboard in Resources */,
@@ -433,13 +466,16 @@
 			files = (
 				84B73B7D2319831500EE81EF /* EasyTipViewHelper.swift in Sources */,
 				84C277DD23156C20002BBA02 /* UserDataVC.swift in Sources */,
+				84EB1BDE235E2A7D006EF45B /* AddUserCell.swift in Sources */,
 				843DB100231FEA7F006F1E3D /* UserDataCell.swift in Sources */,
+				84B22BCF235F38E10001817B /* UserDetailVC.swift in Sources */,
 				84C277D82315645A002BBA02 /* UIAlertViewController.swift in Sources */,
 				84C277E723159972002BBA02 /* Constant.swift in Sources */,
 				84C277D62315626E002BBA02 /* UIApplication.swift in Sources */,
 				84C277E523159311002BBA02 /* NavigationBar.swift in Sources */,
 				84C277C2231561C5002BBA02 /* Home.swift in Sources */,
 				841F22A723587E9300BAD00D /* Appecules.xcdatamodeld in Sources */,
+				84EB1BD5235E2438006EF45B /* AddUserVC.swift in Sources */,
 				84C277C0231561C5002BBA02 /* AppDelegate.swift in Sources */,
 				84C277E323158E2F002BBA02 /* AppeculesStyle.swift in Sources */,
 				84C277D323156216002BBA02 /* UIViewController.swift in Sources */,
@@ -597,10 +633,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Appecules/Worldpay",
-				);
+				LIBRARY_SEARCH_PATHS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = Appecules.Appecules;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Appecules-Bridging-Header.h";
@@ -623,10 +656,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Appecules/Worldpay",
-				);
+				LIBRARY_SEARCH_PATHS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = Appecules.Appecules;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Appecules-Bridging-Header.h";

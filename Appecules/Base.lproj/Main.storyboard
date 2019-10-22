@@ -115,6 +115,89 @@
             </objects>
             <point key="canvasLocation" x="2011.594202898551" y="116.51785714285714"/>
         </scene>
+        <!--Add UserVC-->
+        <scene sceneID="ypP-oU-ftA">
+            <objects>
+                <viewController storyboardIdentifier="AddUserVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="jsJ-rJ-jE6" customClass="AddUserVC" customModule="Appecules" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9sk-Du-JCv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1500"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LQ5-Ef-Yup" userLabel="Add Entry">
+                                <rect key="frame" x="0.0" y="64" width="207" height="70"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="X5d-Xb-IbK"/>
+                                </constraints>
+                                <state key="normal" title="Add Entry"/>
+                                <connections>
+                                    <action selector="addEntryBtnAction:" destination="jsJ-rJ-jE6" eventType="touchUpInside" id="hjv-YE-z0C"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DkL-mS-U1o">
+                                <rect key="frame" x="207" y="64" width="207" height="70"/>
+                                <state key="normal" title="Remove"/>
+                                <connections>
+                                    <action selector="removeEntryBtnAction:" destination="jsJ-rJ-jE6" eventType="touchUpInside" id="8D4-qy-Ym6"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="XjQ-Xe-zlF">
+                                <rect key="frame" x="0.0" y="134" width="414" height="1232"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="jsJ-rJ-jE6" id="9El-CZ-yRu"/>
+                                    <outlet property="delegate" destination="jsJ-rJ-jE6" id="DCm-9W-rSp"/>
+                                </connections>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IvO-rb-xoT" userLabel="Bottom View">
+                                <rect key="frame" x="0.0" y="1366" width="414" height="100"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="utt-dt-4YZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                                        <state key="normal" title="Save Entry"/>
+                                        <connections>
+                                            <action selector="saveEntryBtnAction:" destination="jsJ-rJ-jE6" eventType="touchUpInside" id="fHf-aw-P2D"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="D21-V3-3ll"/>
+                                    <constraint firstAttribute="trailing" secondItem="utt-dt-4YZ" secondAttribute="trailing" id="Izu-v1-Ksp"/>
+                                    <constraint firstItem="utt-dt-4YZ" firstAttribute="leading" secondItem="IvO-rb-xoT" secondAttribute="leading" id="ORd-Mu-R3Z"/>
+                                    <constraint firstItem="utt-dt-4YZ" firstAttribute="top" secondItem="IvO-rb-xoT" secondAttribute="top" id="Teg-Cc-DeA"/>
+                                    <constraint firstAttribute="bottom" secondItem="utt-dt-4YZ" secondAttribute="bottom" id="dYK-ez-A1P"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="DkL-mS-U1o" firstAttribute="top" secondItem="lyX-fX-hYr" secondAttribute="top" constant="20" id="6jD-Ia-nvR"/>
+                            <constraint firstItem="lyX-fX-hYr" firstAttribute="trailing" secondItem="DkL-mS-U1o" secondAttribute="trailing" id="AFf-cS-VcG"/>
+                            <constraint firstItem="LQ5-Ef-Yup" firstAttribute="top" secondItem="lyX-fX-hYr" secondAttribute="top" constant="20" id="EMX-Mi-Pm0"/>
+                            <constraint firstItem="IvO-rb-xoT" firstAttribute="leading" secondItem="lyX-fX-hYr" secondAttribute="leading" id="FO8-Ru-B9j"/>
+                            <constraint firstItem="lyX-fX-hYr" firstAttribute="trailing" secondItem="XjQ-Xe-zlF" secondAttribute="trailing" id="FTI-bE-ZPI"/>
+                            <constraint firstItem="lyX-fX-hYr" firstAttribute="trailing" secondItem="IvO-rb-xoT" secondAttribute="trailing" id="HHV-mu-Bdz"/>
+                            <constraint firstItem="XjQ-Xe-zlF" firstAttribute="leading" secondItem="lyX-fX-hYr" secondAttribute="leading" id="Ihd-X7-XPm"/>
+                            <constraint firstItem="XjQ-Xe-zlF" firstAttribute="top" secondItem="LQ5-Ef-Yup" secondAttribute="bottom" id="Sh0-tC-VoN"/>
+                            <constraint firstItem="IvO-rb-xoT" firstAttribute="bottom" secondItem="lyX-fX-hYr" secondAttribute="bottom" id="TC7-FE-xb2"/>
+                            <constraint firstItem="XjQ-Xe-zlF" firstAttribute="top" secondItem="DkL-mS-U1o" secondAttribute="bottom" id="ax3-Ro-Vov"/>
+                            <constraint firstItem="DkL-mS-U1o" firstAttribute="leading" secondItem="LQ5-Ef-Yup" secondAttribute="trailing" id="cOf-7W-gau"/>
+                            <constraint firstItem="LQ5-Ef-Yup" firstAttribute="width" secondItem="9sk-Du-JCv" secondAttribute="width" multiplier="0.5" id="foy-Hu-G60"/>
+                            <constraint firstItem="IvO-rb-xoT" firstAttribute="top" secondItem="XjQ-Xe-zlF" secondAttribute="bottom" id="gPr-Ua-KNp"/>
+                            <constraint firstItem="LQ5-Ef-Yup" firstAttribute="leading" secondItem="lyX-fX-hYr" secondAttribute="leading" id="nEV-ep-mcv"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="lyX-fX-hYr"/>
+                    </view>
+                    <size key="freeformSize" width="414" height="1500"/>
+                    <connections>
+                        <outlet property="addUserTable" destination="XjQ-Xe-zlF" id="qkJ-Dm-zBv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vXF-Qd-Wrj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2794.202898550725" y="-6.0267857142857144"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="JZY-tK-ZCj">
             <objects>
@@ -132,6 +215,20 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Hv-ob-J4h" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="131.8840579710145" y="-589.28571428571422"/>
+        </scene>
+        <!--User DetailVC-->
+        <scene sceneID="z1o-a2-o0K">
+            <objects>
+                <viewController storyboardIdentifier="UserDetailVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="6Gd-fT-F1o" customClass="UserDetailVC" customModule="Appecules" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Lbz-ZG-5zJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="HVq-iL-sdd"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BNh-2W-pJG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
         </scene>
     </scenes>
 </document>

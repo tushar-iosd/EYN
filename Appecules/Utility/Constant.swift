@@ -16,13 +16,17 @@ enum storyBoardID: String {
 enum viewControllers: String {
     case Home = "Home"
     case UserData = "UserDataVC"
+    case AddUser = "AddUserVC"
+    case UserDetails = "UserDetailVC"
     //case Profile = "ProfileVC"
 }
 
 enum AppAlertMessage {
+      static let dataSaved = "Data Saved"
     static let okay = "Okay"
     static let cancel = "Cancel"
     static let no = "No"
+    static let nameBlank = "Entry cannot be blank"
 }
 enum ApplicationHeaders {
     static let appName = "Appecules"

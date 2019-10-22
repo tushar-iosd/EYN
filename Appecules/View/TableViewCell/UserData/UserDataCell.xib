@@ -18,9 +18,28 @@
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
                 <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                 <autoresizingMask key="autoresizingMask"/>
-                <color key="backgroundColor" red="0.00043350164200000002" green="0.50086414810000002" blue="0.014671590179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MY4-b1-IC2">
+                        <rect key="frame" x="10" y="0.0" width="150" height="43.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="150" id="wS8-7K-m1f"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="MY4-b1-IC2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="CGl-yO-J9Y"/>
+                    <constraint firstAttribute="bottom" secondItem="MY4-b1-IC2" secondAttribute="bottom" id="GjW-Hw-SCs"/>
+                    <constraint firstItem="MY4-b1-IC2" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="JmY-60-AcL"/>
+                </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="nameLbl" destination="MY4-b1-IC2" id="we9-T3-9DP"/>
+            </connections>
         </tableViewCell>
     </objects>
 </document>
