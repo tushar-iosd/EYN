@@ -12,6 +12,7 @@ enum appeculesScreen: String {
     case OrderHistory = "Order History"
     case AddUser = "Add User"
     case UserDetail = "User Detail"
+    case Practice = "Practice Screen"
 }
 
 
@@ -49,6 +50,11 @@ class NavigationBar: UIView {
             leftButtonItem.titleLabel?.textColor = UIColor.white
             rightButtonItem.isHidden = true
             color = UIColor.purple
+        case .Practice:
+            leftButtonItem.setTitle("Back", for: .normal)
+            leftButtonItem.titleLabel?.textColor = UIColor.white
+            rightButtonItem.isHidden = true
+            color = UIColor.lightGray
         }
         self.backgroundColor = color
     }

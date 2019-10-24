@@ -39,16 +39,15 @@ class Home: UIViewController {
             if index == 0 {
             } else if index == 1 {
             }
-            else if index == 2{
-                print("222")
-            }
         }
     }
     
-    
-    @IBAction func navigateToNextScreen(_ sender: Any) {
-        // Navigating to UserData Screen
+    // Navigating to UserData Screen
+    @IBAction func userEntryBtnAction(_ sender: Any) {
         navigate(newControl: viewControllers.UserData, StoryBoard: storyBoardID.Main.rawValue)
+    }
+    @IBAction func practiceBtnAction(_ sender: Any) {
+         navigate(newControl: viewControllers.Practice, StoryBoard: storyBoardID.Main.rawValue)
     }
     
     //Easy Tip View Display

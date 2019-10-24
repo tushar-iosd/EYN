@@ -18,7 +18,7 @@ class AddUserVC: UIViewController {
          // Do any additional setup after loading the view.
         self.customNavigationView(barType:appeculesScreen.AddUser)
       
-        registerTableCell(tableView: addUserTable, tableViewCell: "AddUserCell")
+        registerTableCell(tableView: addUserTable, tableViewCell: TableViewCells.addUser)
         // Do any additional setup after loading the view.
     }
     
@@ -43,15 +43,16 @@ class AddUserVC: UIViewController {
             
             if ((!name.trimmingCharacters(in: .whitespaces).isEmpty )&&(!empID.trimmingCharacters(in: .whitespaces).isEmpty)) {
                 // string contains non-whitespace characters
-                saveWithCoreData(entityName: "Person", Entries: entryDict) //Globally Declared Function
-                // save(name: fullName) // Class Level Function
+               
             } else {
                presentAlertController(title: ApplicationHeaders.appName, message: AppAlertMessage.nameBlank, buttons: [AppAlertMessage.okay])
             }
         }
-        rowCount = 1
         UIAlertController.showAlert(ApplicationHeaders.appName, message: AppAlertMessage.dataSaved, buttons: [AppAlertMessage.okay]) { (alert, index) in
-           self.popOrDismissViewController(true)
+             self.saveWithCoreData(entityName: "Person", Entries: entryDict) //Globally Declared Function
+            // save(name: fullName) // Class Level Function
+            self.popOrDismissViewController(true)
+            self.rowCount = 1
         }
     }
     
@@ -108,9 +109,7 @@ extension AddUserVC : UITableViewDataSource,UITableViewDelegate{
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "AddUserCell", for: indexPath) as! AddUserCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: TableViewCells.addUser, for: indexPath) as! AddUserCell
         return cell
     }
-    
-    
 }

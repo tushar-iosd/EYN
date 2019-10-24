@@ -18,7 +18,7 @@ enum viewControllers: String {
     case UserData = "UserDataVC"
     case AddUser = "AddUserVC"
     case UserDetails = "UserDetailVC"
-    //case Profile = "ProfileVC"
+    case Practice = "PracticeVC"
 }
 
 enum AppAlertMessage {
@@ -30,4 +30,8 @@ enum AppAlertMessage {
 }
 enum ApplicationHeaders {
     static let appName = "Appecules"
+}
+enum TableViewCells {
+    static let addUser = "AddUserCell"
+    static let userData = "UserDataCell"
 }

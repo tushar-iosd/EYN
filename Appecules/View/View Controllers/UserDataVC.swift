@@ -20,7 +20,7 @@ class UserDataVC: UIViewController {
         self.customNavigationView(barType:appeculesScreen.OrderHistory)
         title = "The List"
      // self.registerTableCell()
-        registerTableCell(tableView: dataTableView, tableViewCell: "UserDataCell")
+        registerTableCell(tableView: dataTableView, tableViewCell: TableViewCells.userData)
     }
     @IBAction func buttonAction(_ sender: Any) {
     self.navigate(newControl: viewControllers.AddUser, StoryBoard: storyBoardID.Main.rawValue)
@@ -42,7 +42,7 @@ extension UserDataVC : UITableViewDataSource,UITableViewDelegate{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let person = people[indexPath.row]
-        let cell: UserDataCell = tableView.dequeueReusableCell(withIdentifier: "UserDataCell",
+        let cell: UserDataCell = tableView.dequeueReusableCell(withIdentifier:  TableViewCells.userData,
                                                  for: indexPath) as! UserDataCell
         guard let personName = person.value(forKey: "name") else {
             return cell
@@ -52,7 +52,7 @@ extension UserDataVC : UITableViewDataSource,UITableViewDelegate{
     }
     func selectCell(indexPath: IndexPath) {
         selectedCell = indexPath
-        self.dataTableView?.dequeueReusableCell(withIdentifier: "UserDataCell")
+        self.dataTableView?.dequeueReusableCell(withIdentifier:  TableViewCells.userData)
         addName(fromMoreAction: true)
     }
     
@@ -118,11 +118,6 @@ extension UserDataVC : UITableViewDataSource,UITableViewDelegate{
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 80
     }
-    
-  /*  func registerTableCell() {
-            let userDataCell = UINib(nibName: "UserDataCell", bundle: nil)
-          self.dataTableView.register(userDataCell, forCellReuseIdentifier: "UserDataCell")
-    }*/
 }
 
 // Core Data Methods
