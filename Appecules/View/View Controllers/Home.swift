@@ -23,7 +23,7 @@ class Home: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // showOutgoingMessage(width: 280, height: 50)
-        self.customNavigationView(barType:appeculesScreen.Home)
+        self.customNavigationView(barType:AppeculesScreen.Home)
         easyTipHelper.setPreferences()
         // Do any additional setup after loading the view.
     }

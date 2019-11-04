@@ -74,7 +74,7 @@ extension UIViewController {
      - Parameters:
      - barType : Type of Screen
      */
-    func customNavigationView(barType: appeculesScreen){
+    func customNavigationView(barType: AppeculesScreen){
         let view = NavigationBar.loadFromNib() as! NavigationBar
         view.frame = CGRect(x: self.view.frame.origin.x, y: self.view.frame.origin.y, width: self.view.frame.width, height: 74)
         UIApplication.visibleViewController.navigationController?.navigationBar.isHidden = true
@@ -174,11 +174,3 @@ extension UIViewController {
     }*/
 }
 
-//
-//enum appeculesScreen: String {
-//    case home = "Home", orderHistory = "My Orders"
-//    //return the value of the object
-//    var value: String {
-//        return self.rawValue
-//    }
-//}

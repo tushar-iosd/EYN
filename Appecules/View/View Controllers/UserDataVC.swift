@@ -17,7 +17,7 @@ class UserDataVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.customNavigationView(barType:appeculesScreen.OrderHistory)
+        self.customNavigationView(barType:AppeculesScreen.OrderHistory)
         title = "The List"
      // self.registerTableCell()
         registerTableCell(tableView: dataTableView, tableViewCell: TableViewCells.userData)
@@ -259,7 +259,6 @@ extension UserDataVC {
              people = try context.fetch(fetchRequest)
              self.dataTableView.reloadData()
             print("ResultOFSort",result)
-          //  Person = try context.fetch(fetchRequest)
         } catch {
             print("Cannot fetch Expenses")
         }

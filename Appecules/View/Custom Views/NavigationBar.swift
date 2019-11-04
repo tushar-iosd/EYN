@@ -7,7 +7,7 @@
 //
 
 import UIKit
-enum appeculesScreen: String {
+enum AppeculesScreen: String {
     case Home = "Home"
     case OrderHistory = "Order History"
     case AddUser = "Add User"
@@ -21,7 +21,7 @@ class NavigationBar: UIView {
     
     @IBOutlet weak var leftButtonItem: UIButton!
     @IBOutlet weak var rightButtonItem: UIButton!
-    var barType : appeculesScreen = .Home {
+    var barType : AppeculesScreen = .Home {
         didSet{
             setBarType()
         }

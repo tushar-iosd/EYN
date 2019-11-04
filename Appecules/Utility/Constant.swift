@@ -35,3 +35,9 @@ enum TableViewCells {
     static let addUser = "AddUserCell"
     static let userData = "UserDataCell"
 }
+
+enum algoValue: String {
+   case swappingValues = "By Swapping Values"
+    case reversingString = "By Reversing String"
+    case reversedFunction = "With Reversed Function"
+}

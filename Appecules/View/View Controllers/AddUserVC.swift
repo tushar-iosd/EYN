@@ -16,7 +16,7 @@ class AddUserVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
          // Do any additional setup after loading the view.
-        self.customNavigationView(barType:appeculesScreen.AddUser)
+        self.customNavigationView(barType:AppeculesScreen.AddUser)
       
         registerTableCell(tableView: addUserTable, tableViewCell: TableViewCells.addUser)
         // Do any additional setup after loading the view.
