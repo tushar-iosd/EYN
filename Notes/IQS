@@ -1,0 +1,11 @@
+Q1. ARC is compile Time or Run Time.
+Ans - The compiler inserts the necessary retain/release calls at compile time, but those calls are executed at runtime, just like any other code.
+Q2. An Object’s Lifetime
+Ans - The lifetime of a Swift object consists of five stages:
+
+a)Allocation: Takes memory from a stack or heap.
+b)Initialization: init code runs.
+c)Usage.
+d)Deinitialization: deinit code runs.
+e)Deallocation: Returns memory to a stack or heap.
+
