@@ -19,6 +19,8 @@ enum viewControllers: String {
     case AddUser = "AddUserVC"
     case UserDetails = "UserDetailVC"
     case Practice = "PracticeVC"
+     case Print = "PrintVC"
+     case Swiftify = "SwitifyVC"
 }
 
 enum AppAlertMessage {

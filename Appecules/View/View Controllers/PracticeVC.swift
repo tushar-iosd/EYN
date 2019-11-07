@@ -27,6 +27,9 @@ class PracticeVC: UIViewController {
      var algoTypePickerValue = ["dd"]
     var toolBar = UIToolbar()
     var selectedAlgo = ""
+    
+    //Algo Practice Image
+    var algoImages = [UIImage]()
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -38,6 +41,22 @@ class PracticeVC: UIViewController {
      
     }
     @IBAction func iAlgoDetailButtonAction(_ sender: Any) {
+        let imageName: String = selectedAlgo
+        for i in 0...10 {
+            let imageNameIs: String = imageName + String(i)
+            if let imageNew: UIImage = UIImage(named: imageNameIs) {
+                algoImages.append(imageNew)
+            }  else {
+                algoDetailView.isHidden = false
+                showAlgoImages()
+                return }
+        }
+        // algoDetailView.isHidden = false
+        //showAlgoImages(algoType:)
+    }
+    @IBAction func endAlgoDisplayBtnAction(_ sender: Any) {
+            algoImages = []
+            algoDetailView.isHidden = true
     }
     @IBAction func executeBtnAction(_ sender: Any) {
         let executableAlgo =  algoValue(rawValue: selectedAlgo)
@@ -45,21 +64,17 @@ class PracticeVC: UIViewController {
         switch executableAlgo {
         case .swappingValues?:
             if palindromBySwapingValues() {
-                outPutLabel.backgroundColor = .green
-                outPutLabel.text = "It's Palindrom"
+                self.checkMyAlgo(correct: true)
             } else {
-                outPutLabel.backgroundColor = .red
-                outPutLabel.text = "It's Not Palindrom"
+                self.checkMyAlgo(correct: false)
             }
         case .reversedFunction?:
             self.palindromWithReversedFunction()
         case .reversingString?:
             if palindromByReversingString() {
-                outPutLabel.backgroundColor = .green
-                outPutLabel.text = "It's Palindrom"
+               self.checkMyAlgo(correct: true)
             } else {
-                outPutLabel.backgroundColor = .red
-                outPutLabel.text = "It's Not Palindrom"
+                 self.checkMyAlgo(correct: false)
             }
         default:
             print("default print")
@@ -69,11 +84,9 @@ class PracticeVC: UIViewController {
     
     @IBAction func palindromAction(_ sender: Any) {
         algoTypes = .Palindrom
-        
-   /*    */
    /*     inputTF.inputView = algoTypePicker
-        inputTF.text = algoTypePickerValue[0]*/
-       displayTypes()
+        inputTF.text = algoTypePickerValue[0] */
+            displayTypes()
     }
     
     //Finding palindrom by using Reverse function of String
@@ -81,16 +94,22 @@ class PracticeVC: UIViewController {
         let string : String = inputTF.text ?? "1212"
          let reverseString = String(string.reversed())
         if (reverseString == string) {
-             outPutLabel.backgroundColor = .green
+         self.checkMyAlgo(correct: true)
+        } else {
+         self.checkMyAlgo(correct: false)
+        }
+    }
+
+    func checkMyAlgo(correct: Bool) {
+        if correct {
+            outPutLabel.backgroundColor = .green
             outPutLabel.text = "It's Palindrom"
         } else {
             outPutLabel.backgroundColor = .red
             outPutLabel.text = "It's Not Palindrom"
         }
     }
-
     func displayTypes() {
-        
         switch algoTypes {
         case .Palindrom:
           algoTypePickerValue = [algoValue.swappingValues.rawValue,algoValue.reversingString.rawValue,algoValue.reversedFunction.rawValue]
@@ -168,6 +187,20 @@ class PracticeVC: UIViewController {
     @objc func onDoneButtonTapped() {
     toolBar.removeFromSuperview()
     algoTypePicker.removeFromSuperview()
+    }
+    
+    //Showing Description of Algos via Images
+    func showAlgoImages() {
+        //    algoImages = []
+        for i in 0..<algoImages.count {
+            let imageView = UIImageView()
+            let x = self.view.frame.size.width * CGFloat(i)
+            imageView.frame = CGRect(x: x, y: 0, width: self.view.frame.width, height: self.view.frame.height)
+            imageView.contentMode = .scaleAspectFit
+            imageView.image = algoImages[i]
+            algoDetailScrollView.contentSize.width = algoDetailScrollView.frame.size.width * CGFloat(i + 1)
+            algoDetailScrollView.addSubview(imageView)
+        }
     }
  
 }

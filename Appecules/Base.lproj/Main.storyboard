@@ -41,11 +41,31 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FNZ-rp-AJN" userLabel="Practice">
                                 <rect key="frame" x="165.5" y="97.5" width="83" height="90"/>
                                 <color key="backgroundColor" red="0.98175591230000003" green="0.62192893029999996" blue="0.20259475709999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Practice">
+                                <state key="normal" title="String Practice">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <action selector="practiceBtnAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qjZ-k2-dQ7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fmr-FN-XpU">
+                                <rect key="frame" x="20.5" y="227.5" width="83" height="89.5"/>
+                                <color key="backgroundColor" red="0.1105161086" green="0.38968956469999999" blue="0.61017763609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Print">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="printBtnAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ivd-oE-C2Q"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sAG-SG-Y2c">
+                                <rect key="frame" x="165.5" y="227.5" width="83" height="89.5"/>
+                                <color key="backgroundColor" red="0.14523872730000001" green="0.53205627200000005" blue="0.72058111430000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Swiftify">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="swiftifyAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EmT-7X-fNE"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -55,14 +75,22 @@
                             <constraint firstItem="BRt-bi-kbC" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.2" id="2FV-Na-apj"/>
                             <constraint firstItem="maI-I8-eQE" firstAttribute="width" secondItem="BRt-bi-kbC" secondAttribute="width" id="5FN-hq-xhr"/>
                             <constraint firstItem="BRt-bi-kbC" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" multiplier="0.3" id="9Yv-q9-I4I"/>
+                            <constraint firstItem="fmr-FN-XpU" firstAttribute="height" secondItem="BRt-bi-kbC" secondAttribute="height" id="BlC-L3-wa7"/>
+                            <constraint firstItem="fmr-FN-XpU" firstAttribute="leading" secondItem="BRt-bi-kbC" secondAttribute="leading" id="FrY-7f-Z8g"/>
                             <constraint firstItem="FNZ-rp-AJN" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="J0s-Lr-PRn"/>
                             <constraint firstItem="FNZ-rp-AJN" firstAttribute="height" secondItem="BRt-bi-kbC" secondAttribute="height" id="Kzn-48-jr5"/>
+                            <constraint firstItem="sAG-SG-Y2c" firstAttribute="leading" secondItem="FNZ-rp-AJN" secondAttribute="leading" id="NKx-Dn-QIh"/>
+                            <constraint firstItem="sAG-SG-Y2c" firstAttribute="width" secondItem="FNZ-rp-AJN" secondAttribute="width" id="Tp5-Xn-FYI"/>
+                            <constraint firstItem="fmr-FN-XpU" firstAttribute="top" secondItem="BRt-bi-kbC" secondAttribute="bottom" constant="40" id="Wzv-fa-XEV"/>
                             <constraint firstItem="FNZ-rp-AJN" firstAttribute="width" secondItem="BRt-bi-kbC" secondAttribute="width" id="ZBN-b1-2Gg"/>
                             <constraint firstItem="maI-I8-eQE" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" multiplier="0.3" id="ec7-Mk-RNE"/>
                             <constraint firstItem="maI-I8-eQE" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" multiplier="1.6" id="fH5-OA-Y4V"/>
+                            <constraint firstItem="fmr-FN-XpU" firstAttribute="width" secondItem="BRt-bi-kbC" secondAttribute="width" id="gjs-27-dSc"/>
                             <constraint firstItem="maI-I8-eQE" firstAttribute="height" secondItem="BRt-bi-kbC" secondAttribute="height" id="h7D-HX-fO6"/>
                             <constraint firstItem="FNZ-rp-AJN" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" multiplier="0.3" id="hGq-a2-lTu"/>
                             <constraint firstItem="BRt-bi-kbC" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.1" id="qVh-yO-AfF"/>
+                            <constraint firstItem="sAG-SG-Y2c" firstAttribute="height" secondItem="FNZ-rp-AJN" secondAttribute="height" id="rBk-ZD-gmu"/>
+                            <constraint firstItem="sAG-SG-Y2c" firstAttribute="top" secondItem="FNZ-rp-AJN" secondAttribute="bottom" constant="40" id="tp4-CP-KHE"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -161,30 +189,30 @@
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nw0-A1-Mh9" userLabel="AlgoDetailView">
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <subviews>
-                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Il4-el-mz8" userLabel="AlgoDetailScrollView">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
-                                        <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lw1-5o-bJO" userLabel="AlgoDetailContentView">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            </view>
-                                        </subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lv4-9j-6Sb">
+                                        <rect key="frame" x="318" y="140" width="46" height="30"/>
                                         <constraints>
-                                            <constraint firstItem="Lw1-5o-bJO" firstAttribute="top" secondItem="Il4-el-mz8" secondAttribute="top" id="7Bz-gZ-9qV"/>
-                                            <constraint firstItem="Lw1-5o-bJO" firstAttribute="width" secondItem="Il4-el-mz8" secondAttribute="width" id="7Dx-pe-J6s"/>
-                                            <constraint firstItem="Lw1-5o-bJO" firstAttribute="height" secondItem="Il4-el-mz8" secondAttribute="height" id="IgM-zw-7CM"/>
-                                            <constraint firstAttribute="bottom" secondItem="Lw1-5o-bJO" secondAttribute="bottom" id="Kkj-Ek-Q2e"/>
-                                            <constraint firstAttribute="trailing" secondItem="Lw1-5o-bJO" secondAttribute="trailing" id="ZYh-Vc-A3S"/>
-                                            <constraint firstItem="Lw1-5o-bJO" firstAttribute="leading" secondItem="Il4-el-mz8" secondAttribute="leading" id="nPE-gD-Twl"/>
+                                            <constraint firstAttribute="height" constant="30" id="Sbg-af-HAm"/>
+                                            <constraint firstAttribute="width" constant="46" id="Wpm-r0-XdH"/>
                                         </constraints>
+                                        <state key="normal" title="X"/>
+                                        <connections>
+                                            <action selector="endAlgoDisplayBtnAction:" destination="PqC-2i-ix9" eventType="touchUpInside" id="JMC-UA-Xea"/>
+                                        </connections>
+                                    </button>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Il4-el-mz8" userLabel="AlgoDetailScrollView">
+                                        <rect key="frame" x="0.0" y="170" width="414" height="648"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </scrollView>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="Il4-el-mz8" firstAttribute="leading" secondItem="Nw0-A1-Mh9" secondAttribute="leading" id="47D-Ra-hMh"/>
                                     <constraint firstAttribute="bottom" secondItem="Il4-el-mz8" secondAttribute="bottom" id="6g0-vM-gJM"/>
+                                    <constraint firstItem="Il4-el-mz8" firstAttribute="top" secondItem="Lv4-9j-6Sb" secondAttribute="bottom" id="FwI-9c-TJ8"/>
                                     <constraint firstAttribute="trailing" secondItem="Il4-el-mz8" secondAttribute="trailing" id="Kr5-wi-I0s"/>
-                                    <constraint firstItem="Il4-el-mz8" firstAttribute="top" secondItem="Nw0-A1-Mh9" secondAttribute="top" id="Uwl-Kc-ihr"/>
+                                    <constraint firstAttribute="trailing" secondItem="Lv4-9j-6Sb" secondAttribute="trailing" constant="50" id="rGr-2z-IZ0"/>
+                                    <constraint firstItem="Lv4-9j-6Sb" firstAttribute="top" secondItem="Nw0-A1-Mh9" secondAttribute="top" constant="140" id="ynm-ux-Kt0"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -216,7 +244,6 @@
                         <viewLayoutGuide key="safeArea" id="Vme-Wp-Cxo"/>
                     </view>
                     <connections>
-                        <outlet property="algoDetailControlView" destination="Lw1-5o-bJO" id="WaV-D2-RPG"/>
                         <outlet property="algoDetailScrollView" destination="Il4-el-mz8" id="Pck-qR-acG"/>
                         <outlet property="algoDetailView" destination="Nw0-A1-Mh9" id="TCT-lG-GVt"/>
                         <outlet property="inputTF" destination="ldp-Qf-w56" id="tId-RV-kYU"/>
@@ -378,6 +405,36 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Hv-ob-J4h" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="131.8840579710145" y="-589.28571428571422"/>
+        </scene>
+        <!--SwitifyVC-->
+        <scene sceneID="dy7-j3-1L5">
+            <objects>
+                <viewController storyboardIdentifier="SwitifyVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="aTa-Bg-RF7" customClass="SwitifyVC" customModule="Appecules" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PjP-dk-gdH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.055655844509999997" green="0.2063009143" blue="0.4412528872" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="gTP-ni-1oW"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MhF-Kf-t6p" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1052" y="-42"/>
+        </scene>
+        <!--PrintVC-->
+        <scene sceneID="lG0-yS-UBC">
+            <objects>
+                <viewController storyboardIdentifier="PrintVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="QXr-mU-3tT" customClass="PrintVC" customModule="Appecules" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="egI-60-IyO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="9Tv-zq-anx"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hgA-Bw-C6J" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4" y="-9"/>
         </scene>
         <!--User DetailVC-->
         <scene sceneID="z1o-a2-o0K">

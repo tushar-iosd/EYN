@@ -49,7 +49,13 @@ class Home: UIViewController {
     @IBAction func practiceBtnAction(_ sender: Any) {
          navigate(newControl: viewControllers.Practice, StoryBoard: storyBoardID.Main.rawValue)
     }
+    @IBAction func printBtnAction(_ sender: Any) {
+         navigate(newControl: viewControllers.Print, StoryBoard: storyBoardID.Main.rawValue)
+    }
     
+    @IBAction func swiftifyAction(_ sender: Any) {
+         navigate(newControl: viewControllers.Swiftify, StoryBoard: storyBoardID.Main.rawValue)
+    }
     //Easy Tip View Display
     func easyTip(){
         /*

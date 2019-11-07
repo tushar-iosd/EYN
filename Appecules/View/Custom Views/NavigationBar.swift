@@ -13,6 +13,8 @@ enum AppeculesScreen: String {
     case AddUser = "Add User"
     case UserDetail = "User Detail"
     case Practice = "Practice Screen"
+    case Swiftify = "Swiftify"
+    case Print = "Print"
 }
 
 
@@ -44,7 +46,7 @@ class NavigationBar: UIView {
             leftButtonItem.setTitle("Back", for: .normal)
             leftButtonItem.titleLabel?.textColor = UIColor.white
             rightButtonItem.isHidden = true
-            color = UIColor.purple
+            color = UIColor.blue
         case .UserDetail:
             leftButtonItem.setTitle("Back", for: .normal)
             leftButtonItem.titleLabel?.textColor = UIColor.white
@@ -55,6 +57,16 @@ class NavigationBar: UIView {
             leftButtonItem.titleLabel?.textColor = UIColor.white
             rightButtonItem.isHidden = true
             color = UIColor.lightGray
+        case .Swiftify:
+            leftButtonItem.setTitle("Back", for: .normal)
+            leftButtonItem.titleLabel?.textColor = UIColor.white
+            rightButtonItem.isHidden = true
+            color = UIColor.gray
+        case .Print:
+            leftButtonItem.setTitle("Back", for: .normal)
+            leftButtonItem.titleLabel?.textColor = UIColor.white
+            rightButtonItem.isHidden = true
+            color = UIColor.gray
         }
         self.backgroundColor = color
     }

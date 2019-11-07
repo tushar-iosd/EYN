@@ -13,6 +13,9 @@
 		843DB0F7231FDB69006F1E3D /* CoreData in Resources */ = {isa = PBXBuildFile; fileRef = 843DB0F6231FDB69006F1E3D /* CoreData */; };
 		843DB100231FEA7F006F1E3D /* UserDataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843DB0FE231FEA7F006F1E3D /* UserDataCell.swift */; };
 		843DB101231FEA7F006F1E3D /* UserDataCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 843DB0FF231FEA7F006F1E3D /* UserDataCell.xib */; };
+		8456F35A2371B49200C6331C /* PrintVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8456F3592371B49200C6331C /* PrintVC.swift */; };
+		8456F35C2371B4B200C6331C /* SwitifyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8456F35B2371B4B200C6331C /* SwitifyVC.swift */; };
+		8456F35E2371BBD700C6331C /* IQS in Resources */ = {isa = PBXBuildFile; fileRef = 8456F35D2371BBD700C6331C /* IQS */; };
 		848DCEC92316A6EA00B94EE4 /* NavigationBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 848DCEC82316A6EA00B94EE4 /* NavigationBar.xib */; };
 		84B22BCF235F38E10001817B /* UserDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B22BCE235F38E10001817B /* UserDetailVC.swift */; };
 		84B73B7D2319831500EE81EF /* EasyTipViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B73B7C2319831500EE81EF /* EasyTipViewHelper.swift */; };
@@ -43,6 +46,9 @@
 		843DB0F6231FDB69006F1E3D /* CoreData */ = {isa = PBXFileReference; lastKnownFileType = text; path = CoreData; sourceTree = "<group>"; };
 		843DB0FE231FEA7F006F1E3D /* UserDataCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataCell.swift; sourceTree = "<group>"; };
 		843DB0FF231FEA7F006F1E3D /* UserDataCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserDataCell.xib; sourceTree = "<group>"; };
+		8456F3592371B49200C6331C /* PrintVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrintVC.swift; sourceTree = "<group>"; };
+		8456F35B2371B4B200C6331C /* SwitifyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitifyVC.swift; sourceTree = "<group>"; };
+		8456F35D2371BBD700C6331C /* IQS */ = {isa = PBXFileReference; lastKnownFileType = text; path = IQS; sourceTree = "<group>"; };
 		8487C3F2233CC8280067E515 /* libWorldpay.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWorldpay.a; sourceTree = "<group>"; };
 		8487C3F4233CC8280067E515 /* ThreeDSController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThreeDSController.h; sourceTree = "<group>"; };
 		8487C3F5233CC8280067E515 /* WorldpayCardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WorldpayCardViewController.h; sourceTree = "<group>"; };
@@ -133,6 +139,8 @@
 				84EB1BD4235E2438006EF45B /* AddUserVC.swift */,
 				84B22BCE235F38E10001817B /* UserDetailVC.swift */,
 				8419E5822360626E00091A78 /* PracticeVC.swift */,
+				8456F3592371B49200C6331C /* PrintVC.swift */,
+				8456F35B2371B4B200C6331C /* SwitifyVC.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -321,6 +329,7 @@
 			children = (
 				84C277DA23156674002BBA02 /* Closure */,
 				843DB0F6231FDB69006F1E3D /* CoreData */,
+				8456F35D2371BBD700C6331C /* IQS */,
 			);
 			path = Notes;
 			sourceTree = "<group>";
@@ -426,6 +435,7 @@
 				843DB101231FEA7F006F1E3D /* UserDataCell.xib in Resources */,
 				843DB0F7231FDB69006F1E3D /* CoreData in Resources */,
 				84C8D3B9235B476600CC701A /* Desc in Resources */,
+				8456F35E2371BBD700C6331C /* IQS in Resources */,
 				84EB1BDF235E2A7D006EF45B /* AddUserCell.xib in Resources */,
 				84C277CA231561CE002BBA02 /* LaunchScreen.storyboard in Resources */,
 				8419E5812360563F00091A78 /* Main.storyboard in Resources */,
@@ -485,6 +495,7 @@
 			files = (
 				84B73B7D2319831500EE81EF /* EasyTipViewHelper.swift in Sources */,
 				84C277DD23156C20002BBA02 /* UserDataVC.swift in Sources */,
+				8456F35A2371B49200C6331C /* PrintVC.swift in Sources */,
 				84EB1BDE235E2A7D006EF45B /* AddUserCell.swift in Sources */,
 				843DB100231FEA7F006F1E3D /* UserDataCell.swift in Sources */,
 				84B22BCF235F38E10001817B /* UserDetailVC.swift in Sources */,
@@ -494,6 +505,7 @@
 				84C277E523159311002BBA02 /* NavigationBar.swift in Sources */,
 				84C277C2231561C5002BBA02 /* Home.swift in Sources */,
 				841F22A723587E9300BAD00D /* Appecules.xcdatamodeld in Sources */,
+				8456F35C2371B4B200C6331C /* SwitifyVC.swift in Sources */,
 				84EB1BD5235E2438006EF45B /* AddUserVC.swift in Sources */,
 				84C277C0231561C5002BBA02 /* AppDelegate.swift in Sources */,
 				84C277E323158E2F002BBA02 /* AppeculesStyle.swift in Sources */,
